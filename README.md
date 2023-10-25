@@ -21,7 +21,7 @@ Useful for compressing images over slow transports (wifi, etc).
 There are two complementary nodes: `JPEGCompressor`, which can turn rgb tensors into jpegs in memory, and `JPEGDecompressor`, which does the opposite. Useful either for writing rgb tensors to files, or compressing them (NOTE jpeg is lossy).
 
     # all parameters are optional
-    c = JPEGCompressor(
+    c = ruj.JPEGCompressor(
 
         # in the incoming message, where to find the rgb tensor
         image_key = "rgb",
@@ -42,13 +42,13 @@ There are two complementary nodes: `JPEGCompressor`, which can turn rgb tensors 
 
 ... and ...
 
-    c = JPEGDecompressor(
+    c = ruj.JPEGDecompressor(
 
         # in the incoming message, where to find the jpeg data as a blob
         input_key = "jpeg",
 
         # in the outgoing message, where to place the rgb data as a tensor
-        output_key = "jpeg", 
+        output_key = "rgb", 
 
         # name of the node
         name = "JPEGDecompressor",

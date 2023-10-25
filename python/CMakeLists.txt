@@ -13,6 +13,8 @@ set(PYBIND11_CPP_STANDARD -std=c++20)
 # -------------------- 
 # Resolve dependencies
 
+find_package(Python REQUIRED COMPONENTS Interpreter Development NumPy)
+
 include(FetchContent)
 
 # download and build pybind11

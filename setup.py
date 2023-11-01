@@ -50,7 +50,7 @@ long_description = (Path(__file__).parent / "README.md").read_text()
 
 setup(
     name='roboflex.util.jpeg',
-    version='0.1.1',
+    version='0.1.2',
     description='Roboflex util jpeg Library',
     author='Colin Prepscius',
     author_email='colinprepscius@gmail.com',

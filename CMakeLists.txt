@@ -15,7 +15,9 @@ include(FetchContent)
 # Fetch and make jpeg-compressor available
 FetchContent_Declare(
   jpeg-compressor
-  URL https://github.com/richgel999/jpeg-compressor/archive/refs/tags/v104.tar.gz
+  #URL https://github.com/richgel999/jpeg-compressor/archive/refs/tags/v104.tar.gz
+  GIT_REPOSITORY git@github.com:glebm/jpeg-compressor.git
+  GIT_TAG        patch-1
 )
 
 FetchContent_MakeAvailable(jpeg-compressor)

@@ -20,7 +20,9 @@ FetchContent_Declare(
   GIT_TAG        patch-1
 )
 
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5 CACHE STRING "" FORCE)
 FetchContent_MakeAvailable(jpeg-compressor)
+unset(CMAKE_POLICY_VERSION_MINIMUM CACHE)
 
 # Specify the source directory
 set(JPEG_COMPRESSOR_SRC_DIR "${jpeg-compressor_SOURCE_DIR}")

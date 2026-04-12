@@ -48,7 +48,7 @@ JPEGCompressor::JPEGCompressor(const string& image_key, const string& output_key
 
 JPEGCompressor::~JPEGCompressor() 
 {
-    std::cerr << "~JPEGCompressor" << std::endl;
+    //std::cerr << "~JPEGCompressor" << std::endl;
     free(compression_buffer);
 }
 

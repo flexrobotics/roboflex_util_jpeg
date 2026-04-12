@@ -13,10 +13,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include(FetchContent)
 
 # Fetch and make jpeg-compressor available
+# FetchContent_Declare(
+#   jpeg-compressor
+#   #URL https://github.com/richgel999/jpeg-compressor/archive/refs/tags/v104.tar.gz
+#   GIT_REPOSITORY git@github.com:glebm/jpeg-compressor.git
+#   GIT_TAG        patch-1
+# )
+
 FetchContent_Declare(
   jpeg-compressor
-  #URL https://github.com/richgel999/jpeg-compressor/archive/refs/tags/v104.tar.gz
-  GIT_REPOSITORY git@github.com:glebm/jpeg-compressor.git
+  GIT_REPOSITORY https://github.com/glebm/jpeg-compressor.git
   GIT_TAG        patch-1
 )
 
